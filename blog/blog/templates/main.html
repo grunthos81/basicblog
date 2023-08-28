@@ -1,0 +1,22 @@
+{%load static%}
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{%block title%}Thought Droppings{%endblock title%}</title>
+    <link href="{%static 'main.css'%}" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+            <li class = "title"><a href="/section/home">Thought <br> Droppings</a></li>
+            <li class = "section"><a href="/section/theology">Theology</a></li>
+            <li class = "section"><a href="/section/travel">Travel</a></li>
+            <li class = "section"><a href="/section/computing">Computing</a></li>
+        </ul>
+    </div>
+{%block content%}
+{%endblock content%}
+</body>
+</html>

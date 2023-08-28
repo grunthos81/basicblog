@@ -1,0 +1,52 @@
+h, p, a{
+    font-family: 'Helvetica', serif;
+    color: #032508
+}
+
+li{
+    display: inline-block;
+    margin-left: 2em;
+}
+
+a{
+    text-decoration: none;
+    transition-duration: 1s;
+    transition-property: background-color;
+}
+
+a:hover{
+    background-color: rgb(241, 250, 233);
+}
+
+.title a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8em;
+}
+
+.section{
+    font-size: 1.3em;
+}
+
+#content{
+    width: 90%;
+    margin: auto;
+    
+    
+}
+
+#newest_article{
+    width: 20%;
+    border-right: #032508 5px;
+}
+
+
+#second_article{
+    width: 25%;
+    border: #032508 5px;
+}
+
+#subsequent_article{
+    width: 20%;
+    margin-left: 2.9em;
+    border: #032508 5px;
+}

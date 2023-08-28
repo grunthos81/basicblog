@@ -1,0 +1,11 @@
+{%extends 'main.html'%}
+
+{%block content%}
+<div id="main_article"></div>
+<h1>{{article.title}}</h1>
+<p id="edited">{{article.last_edited}}</p>
+{%autoescape off%}
+{{article.body}}
+{%endautoescape%}
+</div>
+{%endblock content%}

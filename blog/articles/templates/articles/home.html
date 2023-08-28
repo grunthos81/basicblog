@@ -1,0 +1,30 @@
+{%extends 'main.html'%}
+
+{%block content%}
+<div id="content">
+    <ul>
+<li id="newest_article">
+    <h1><a href="{{latest.permalink}}">{{latest.title}}</a></h1>
+    <p>A. Owen</p>
+    <p>{{latest.subtext}}</p>
+    <p>Published: {{latest.last_edited}}</p>
+</li>
+<li id="newest_article_image">
+    <img src='{{latest.image}}' height="365" width="503">
+</li>
+<li id="second_article">
+    <img src='{{second.image}}' height="150" width="215">
+    <h2><a href="{{second.permalink}}">{{second.title}}</a></h2>
+    <p>A. Owen</p>
+    <p>{{second.subtext}}</p>
+    <p>Published: {{second.last_edited}}</p>
+</li>
+{%for article in other%}
+<li id="subsequent_article">
+    <img src='{{article.image}}' height="150" width="215">
+    <h3><a href="{{article.permalink}}">{{article.title}}</a></h3>
+    <p>{{article.subtext}}</p>
+    <p>Published: {{article.last_edited}}</p>
+</li>
+{%endfor%}
+{%endblock content%}
